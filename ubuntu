@@ -1,0 +1,17 @@
+sudo apt update  ; sudo apt clean ; sudo apt autoclean ; sudo apt upgrade -y ; sudo apt autoremove -y ;
+
+sudo apt install -y tar lolcat neofetch speedtest-cli git vim curl  python3 python3-pip  software-properties-common wget  nmap htop   p7zip-full  masscan   gdu  p7zip-full hydra  build-essential  libpcap-dev jq  
+
+#zsh
+
+
+
+chsh -s /bin/zsh 
+echo $SHELL
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+source ~/.zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+source ~/.zshrc
