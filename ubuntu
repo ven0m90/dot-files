@@ -4,16 +4,13 @@ sudo apt install -y zsh tar lolcat neofetch speedtest-cli git vim curl  python3 
 
 #zsh
 
-
-
-chsh -s /bin/zsh 
+sudo chsh -s /bin/zsh 
 echo $SHELL
+sudo rm -rf ~/.oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-
-
+curl -L https://raw.githubusercontent.com/ven0m90/my-os-setup/main/.zshrc -o ~/.zshrc
 
 source  ~/.zshrc
