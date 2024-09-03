@@ -5,6 +5,7 @@ echo 'root' | sudo -kS apt install -y zsh tar lolcat neofetch speedtest-cli git 
 #zsh
 echo 'root' | sudo -kS apt install -y zsh
 echo 'root' | sudo -kS chsh -s /bin/zsh 
+echo 'root' | sudo -kS chsh -s $(which zsh)
 echo $SHELL
 echo 'root' | sudo -kS rm -rf ~/.oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
