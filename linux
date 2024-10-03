@@ -14,3 +14,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 source  ~/.zshrc
 chsh -s $(which zsh)
 echo 'root' | sudo -kS chsh -s $(which zsh)
+
+
+#kali-wsl
+
+echo 'root' | sudo -kS apt install zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k
+source ~/.zshrc
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+echo 'root' | sudo -kS chsh -s $(which zsh)
+echo 'root' | sudo -kS chsh -s /bin/zsh 
