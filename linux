@@ -24,3 +24,11 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 echo 'root' | sudo -kS chsh -s $(which zsh)
 echo 'root' | sudo -kS chsh -s /bin/zsh 
+
+
+nano .bashrc 
+
+if test -t 1; then
+exec zsh
+fi
+
