@@ -18,12 +18,12 @@ echo 'root' | sudo -kS chsh -s $(which zsh)
 
 #kali-wsl
 
-echo 'root' | sudo -kS apt install zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k
+sudo  apt install zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k -y
 source ~/.zshrc
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-echo 'root' | sudo -kS chsh -s $(which zsh)
-echo 'root' | sudo -kS chsh -s /bin/zsh 
+sudo  chsh -s $(which zsh)
+sudo  chsh -s /bin/zsh 
 
 
 nano .bashrc 
