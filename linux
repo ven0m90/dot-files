@@ -1,3 +1,30 @@
+#kali-wsl
+sudo apt update
+sudo  apt install -y zsh*
+curl https://gitlab.com/kalilinux/packages/kali-defaults/-/raw/kali/master/etc/skel/.zshrc -o ~/.zshrc
+source ~/.zshrc
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+sudo  chsh -s $(which zsh)
+sudo  chsh -s /bin/zsh 
+
+
+nano .bashrc 
+
+if test -t 1; then
+exec zsh
+fi
+
+sudo apt install -y zsh tar lolcat neofetch speedtest-cli git vim curl  python3 python3-pip  software-properties-common wget  nmap htop   p7zip-full  masscan   gdu  p7zip-full hydra  build-essential  libpcap-dev jq  
+
+
+......................................................................................................................
+
+
+
+
+
+
 echo 'root' | sudo -kS apt update  ; echo 'root' | sudo -kS apt clean ; echo 'root' | sudo -kS apt autoclean ; echo 'root' | sudo -kS apt upgrade -y ; echo 'root' | sudo -kS apt autoremove -y ;
 
 echo 'root' | sudo -kS apt install -y zsh tar lolcat neofetch speedtest-cli git vim curl  python3 python3-pip  software-properties-common wget  nmap htop   p7zip-full  masscan   gdu  p7zip-full hydra  build-essential  libpcap-dev jq  
@@ -16,19 +43,4 @@ chsh -s $(which zsh)
 echo 'root' | sudo -kS chsh -s $(which zsh)
 
 
-#kali-wsl
-
-sudo  apt install zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k -y
-source ~/.zshrc
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-sudo  chsh -s $(which zsh)
-sudo  chsh -s /bin/zsh 
-
-
-nano .bashrc 
-
-if test -t 1; then
-exec zsh
-fi
 
